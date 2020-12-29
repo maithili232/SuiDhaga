@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inine-block;
+    list-style-type: none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    font-size: large;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+nav2 {
+    flex: 1;
+    text-align: right;
+}
+
+nav2 ul {
+    display: inine-block;
+    list-style-type: none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+}
+
+nav2 ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover {
+    color: black;
+}
+
+p {
+    color: #555;
+}
+
+p1 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 500;
+    margin-left: 370px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header {
+    background: thistle;
+    background-color: url(https://i.postimg.cc/PxjgHLzY/n.jpg);
+}
+
+.carousel-container {
+    height: 600px;
+}
+
+.cat-title {
+    padding-top: 70px;
+    padding-bottom: 25px;
+    text-align: left;
+    margin-left: 650px;
+    text-underline-position: below;
+}
+
+.cat-title h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #555;
+}
+
+.cat-title h1:hover {
+    color: thistle;
+}
+
+.categories {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.categories p {
+    color: #2e3c4b;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+}
+
+.categories h4 {
+    color: #4a4a4a;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    top: 60px;
+    font-size: 25px;
+}
+
+.col-4 {
+    padding-left: 100px;
+    float: left;
+    min-width: 33.33%;
+    padding: 30px;
+}
+
+.col-5 {
+    padding-left: 100px;
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+}
+
+.col-6 {
+    padding-left: 100px;
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+}
+
+.col-7 img {
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p2 {
+    color: black;
+    font-weight: 600;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-style: bold;
+}
+
+h1 {
+    color: black;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-style: bold;
+    font-weight: 500;
+}
+
+.centered {
+    position: absolute;
+    bottom: 200px;
+    right: 0px;
+    color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 70px;
+}
+
+.col-8 {
+    padding-left: 70px;
+    float: left;
+    width: 25%;
+    padding: 70px;
+}
+
+
+/*Dropdown*/
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+@media all and (min-width:991px) {
+    .dropdown:after {
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: opacity .15s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, .7);
+        pointer-events: none;
+    }
+    .dropdown.show .nav-link {
+        position: relative;
+        z-index: 20;
+    }
+    .dropdown.show:after {
+        z-index: 20;
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+    }
+}
+
+
+/*landing-image & Carousel CSS*/
+
+.image {
+    background-size: cover;
+    background-image: url("images/back3.jpg");
+    /* background-position: bottom; */
+    position: relative;
+    width: 100%;
+    height: 650px;
+    /*-webkit-transform:reflect(180deg);
+    -moz-transform:reflect(180deg);
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);*/
+}
+
+.image-text h1 {
+    padding-left: 40%;
+    padding-top: 5%;
+    bottom: 50%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: bold;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.card-carousel-container {
+    position: absolute;
+    width: 900px;
+    height: 400px;
+    top: 60%;
+    left: 20%;
+}
+
+.card {
+    height: 360px;
+}
+
+
+/*Footer CSS*/
+
+.footer {
+    padding-left: 600px;
+    float: left;
+    width: 100%;
+    padding: 60px 0 5px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background: thistle;
+    color: black;
+}
+
+.footer .row .footer-col-1 h3 {
+    padding-left: 175px;
+    position: relative;
+}
+
+.footer .row .footer-col-1 p {
+    position: relative;
+    left: 180px;
+}
+
+.footer .row .footer-col-6 img {
+    position: relative;
+    left: 120px;
+    bottom: 12px;
+}
+
+.footer .row .footer-col-6 p {
+    position: relative;
+    left: 120px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-col-7 h5 {
+    position: relative;
+    left: 100px;
+}
+
+.footer-col-7 ul {
+    position: relative;
+    left: 100px;
+}
+
+.footer-col-10 h5 {
+    position: relative;
+    left: 200px;
+}
+
+.footer-col-10 ul {
+    position: relative;
+    left: 200px;
+}
+
+.footer-col-12 h5 {
+    position: relative;
+    left: 300px;
+}
+
+.footer-col-12 ul {
+    position: relative;
+    left: 300px;
+}
